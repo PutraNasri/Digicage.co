@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu_utama"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.esy.kinketkuena.digicageco.Menu_utama"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+    <GridLayout android:layout_height="match_parent"
+        android:layout_width="350dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:text="TEMPERATURE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal" />
+
+        <ImageButton
+            app:srcCompat="@drawable/suhu1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/imageButton3"
+            android:layout_height="150dp"
+            android:background="@drawable/suhu1"
+            android:scaleType="centerCrop"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_width="150dp"
+            android:layout_marginRight="16dp" />
+
+        <ImageButton
+            app:srcCompat="@drawable/food1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/imageButton2"
+            android:background="@drawable/food1"
+            android:scaleType="centerCrop"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:onClick="food" />
+
+        <TextView
+            android:text="FOOD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:text="BATTERY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" />
+
+        <ImageButton
+            app:srcCompat="@drawable/camera1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/imageButton4"
+            android:layout_height="150dp"
+            android:background="@drawable/camera1"
+            android:scaleType="centerCrop"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_width="150dp" />
+
+        <TextView
+            android:text="CAMERA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" />
+
+        <ImageButton
+            app:srcCompat="@drawable/fan1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/imageButton"
+            android:layout_height="150dp"
+            android:background="@drawable/fan1"
+            android:scaleType="centerCrop"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_width="150dp" />
+
+        <ImageButton
+            app:srcCompat="@drawable/water1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/imageButton6"
+            android:layout_height="150dp"
+            android:background="@drawable/water1"
+            android:scaleType="centerCrop"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_width="150dp" />
+
+        <TextView
+            android:text="WATER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal" />
+
+        <ImageButton
+            app:srcCompat="@drawable/btr1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/imageButton5"
+            android:layout_height="150dp"
+            android:background="@drawable/btr1"
+            android:scaleType="centerCrop"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_width="150dp" />
+
+        <TextView
+            android:text="FAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal" />
+
+    </GridLayout>
+
+</RelativeLayout>

@@ -1,14 +1,11 @@
 package es.esy.kinketkuena.digicageco;
 
-import android.app.ProgressDialog;
+import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -16,10 +13,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +23,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
-    public void klik (View view) throws IOException {
-new  loading().execute();
 
+public void menuu (View viewi){
+    Intent intent = new Intent(MainActivity.this, Menu_utama.class);
+    startActivity(intent);
+    finish();
+}
+
+
+
+
+    public void klik (View view) throws IOException {
+        new  loading().execute();
 
     }
     public  class  loading extends AsyncTask<Void,Void,String> {
