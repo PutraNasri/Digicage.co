@@ -46,23 +46,6 @@
             android:layout_width="150dp"
             android:layout_marginRight="16dp" />
 
-        <ImageButton
-            app:srcCompat="@drawable/food1"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:id="@+id/imageButton2"
-            android:background="@drawable/food1"
-            android:scaleType="centerCrop"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:layout_height="150dp"
-            android:layout_width="150dp"
-            android:onClick="food" />
-
         <TextView
             android:text="FOOD"
             android:layout_width="wrap_content"
@@ -145,7 +128,8 @@
             android:scaleType="centerCrop"
             android:layout_row="4"
             android:layout_column="1"
-            android:layout_width="150dp" />
+            android:layout_width="150dp"
+            android:onClick="water" />
 
         <TextView
             android:text="WATER"
@@ -158,7 +142,6 @@
             android:gravity="center_horizontal" />
 
         <ImageButton
-            app:srcCompat="@drawable/btr1"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -167,11 +150,12 @@
             android:layout_marginTop="12dp"
             android:id="@+id/imageButton5"
             android:layout_height="150dp"
-            android:background="@drawable/btr1"
             android:scaleType="centerCrop"
             android:layout_row="4"
             android:layout_column="0"
-            android:layout_width="150dp" />
+            android:layout_width="150dp"
+            app:srcCompat="@drawable/btr1"
+            android:background="@drawable/btr1" />
 
         <TextView
             android:text="FAN"
@@ -182,6 +166,22 @@
             android:layout_column="1"
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal" />
+
+        <ImageButton
+            app:srcCompat="@drawable/food1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/imageButton2"
+            android:background="@drawable/food1"
+            android:scaleType="centerCrop"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_height="150dp"
+            android:layout_width="150dp" />
 
     </GridLayout>
 

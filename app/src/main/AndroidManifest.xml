@@ -27,7 +27,10 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".Menu_utama" />
-        <activity android:name=".food"></activity>
+        <activity android:name=".water" />
+        <activity android:name=".food" />
+        <activity android:name=".temp" />
+        <activity android:name=".camera"></activity>
     </application>
 
 </manifest>
